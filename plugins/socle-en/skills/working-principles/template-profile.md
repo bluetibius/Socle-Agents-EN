@@ -32,6 +32,10 @@ Aliases tolerated for existing work, never for new work: <list>.
 - Generic command: `<gate command> <project> --ref=<pushed commit>`.
 - Workstation guard: <yes / no, exit code>.
 - Lock or queue: <path, rule>.
+- Time limits: <tool per machine, for example `curl --max-time` on the
+  workstation, `timeout` on the test machine>.
+- Interface qualification: <versioned tool or HTTP requests; driven browser:
+  usable or not; visual checks reserved for the human>.
 
 ## Production
 
@@ -45,6 +49,10 @@ Aliases tolerated for existing work, never for new work: <list>.
 - Hosting and remote names: <…>.
 - Published branch: <main>. Tag format: <vX.Y.Z>.
 - Commit language: <language>.
+- Reserving version numbers: <pushed branch, memory>.
+- Integration branch of the test environment: <name>.
+- What an agent publishes on its own: <tag, published branch, deployment to
+  test — yes / no, after which evidence>.
 
 ## Cross-cutting services
 

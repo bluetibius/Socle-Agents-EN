@@ -26,10 +26,10 @@ The baseline's skills and agents speak of generic notions. The project profile
 |---|---|
 | Environments | canonical names (local, test, production…) and machines |
 | Test machine | where tests, gates and qualifications run |
-| Gate command | the command, its machine, the expected number of tests |
+| Gate command | the command and its machine |
 | Production path | who triggers it, with which tool; what an agent may prepare |
 | Git remotes | remote name, published branch |
-| Versioning | single source of the number, release notes |
+| Versioning | single source of the number, release notes, reserving numbers, test integration branch |
 | Memory and roadmap | location, closing procedure |
 | Language | of commits, documentation, interface |
 

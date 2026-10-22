@@ -7,9 +7,13 @@ description: What "done" means and how to prove it — the repository's gate, th
 
 ## Done
 
-**Done** = the repository's gate is green, on the machine the profile names,
-with the expected number of tests; the change is committed; it is pushed if the
-repository expects it. A report does not replace evidence.
+**Done** = the repository's gate is green, on the machine the profile names;
+the change is committed; it is pushed if the repository expects it. A report
+does not replace evidence.
+
+The number of tests is **read in the gate's log** and reported; it is not
+written in the instructions, where it goes stale. If a drop must block, the
+gate itself checks a minimum.
 
 The repository names its gate in its `AGENTS.md`. Without a named gate, say so,
 and do not invent one.
@@ -68,9 +72,16 @@ A failure is reported with its output; a skipped step is stated.
 
 ## Interface
 
-Check with the tools actually available in the session (built-in browser,
-browser extension, the repository's Playwright if installed). No particular MCP
-server is required.
+- Qualify **without a browser** first: scripted HTTP requests (`curl`, form
+  token read from the page). When an authenticated session is needed, a
+  **versioned tool** of the repository creates it; it refuses to run outside
+  the test environment and deletes what it created.
+- A driven browser (built-in, extension, the repository's Playwright) only if
+  it holds up in the session. If it blocks with no visible request, drop it and
+  record that in the profile.
+- What no tool can prove (visual reading, 200 % zoom) is asked of the human and
+  named in the report as not verified by the agent.
+- No particular MCP server is required.
 
 ## Proportion
 

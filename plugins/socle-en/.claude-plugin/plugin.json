@@ -1,6 +1,6 @@
 {
   "name": "socle-en",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "Generic agent baseline: working principles, parallel Git, gates, versioning, guarded production, secrets, product autonomy, repository instructions, multi-agent missions, memory and roadmap, data and migrations, safe operations, hermetic tests, UX doctrine, routing and deliverables — with role-typed agents (business analyst, architect, technical analyst, UX designer, data manager, developer, tester, devops, incident diagnostician) and review agents.",
   "author": {
     "name": "Jonathan Estevez",

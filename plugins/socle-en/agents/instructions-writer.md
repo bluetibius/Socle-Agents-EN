@@ -13,8 +13,9 @@ You write or check a repository's instructions according to the
 1. Measure the repository: language, actual commands (`package.json`,
    `composer.json`, `Makefile`, scripts), gate, environments, existing
    authoritative documents. Describe only what exists.
-2. Ask for what the code does not say: gate machine, expected number of tests,
-   production path, decided deviations.
+2. Ask for what the code does not say: gate machine, production path, decided
+   deviations. Write no figure that goes stale (number of tests, current
+   version).
 3. Fill in the template, in order. Point to the common rules, do not copy them.
    Aim for under 200 lines; history goes in `docs/`.
 4. `CLAUDE.md` and `GEMINI.md`: the single line `@AGENTS.md`.

@@ -23,7 +23,8 @@ scope. Existing series are not renumbered.
 
 ## During the work
 
-1. Read what exists, the memory and the roadmap; choose the target.
+1. Read what exists, the memory and the roadmap; choose the target and
+   **reserve** its number (skill `parallel-git-work`).
 2. A **single source** for the number in the repository; other projections are
    generated or checked.
 3. Development number `X.Y.Z-dev.YYYYMMDDHHMMSS`, timestamped at the branch's
@@ -41,8 +42,9 @@ A green gate does not remove the suffix: the release is a separate
 2. Push the candidate; gate on its exact commit.
 3. Fast-forward merge onto the published branch; annotated tag `vX.Y.Z` on that
    commit; push branch and tag. Divergence: reconcile, then requalify.
-4. Deliver to test through the product's path and qualify (served version and
-   commit equal to the tag, health, smoke test).
+4. Deliver to test through the product's path, after measuring what is served
+   there, and qualify (served version and commit equal to the tag, health,
+   smoke test).
 5. Production: according to the `guarded-production` skill.
 
 A published tag is **immutable**: a failure is resumed with that code or by a

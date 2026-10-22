@@ -6,7 +6,7 @@ Common rules: <pointer to the organisation profile>, then the agent baseline
 (`plugins/socle-en/skills/working-principles/SKILL.md`). This file only carries
 what is specific to <Product>.
 
-**Done** = <gate command> green on <machine> (<N> tests), commit pushed to
+**Done** = <gate command> green on <machine>, commit pushed to
 <remote>. Log: <path>.
 
 ## Commands

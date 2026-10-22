@@ -25,8 +25,10 @@ only start on an **explicit release decision**; a green gate is not one.
 6. **Publication**: fast-forward merge onto the published branch, annotated tag
    `vX.Y.Z` on that commit, push of the branch and the tag. Divergence:
    reconcile and requalify, never force.
-7. **Test**: deployment through the product's path, then qualification —
-   served version and commit equal to the tag, health, smoke test.
+7. **Test**: measure what is served (integration rule of
+   `parallel-git-work`), deployment through the product's path, then
+   qualification — served version and commit equal to the tag, health, smoke
+   test.
 8. **Production**: you do not deploy. Prepare according to `guarded-production`
    (dry-run, read-only preflight, step-by-step procedure) then stop.
 

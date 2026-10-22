@@ -13,8 +13,8 @@ commands allowed are those your role names below.
 
 ## Before
 
-1. Read the repository's `AGENTS.md`: gate command, execution machine, expected
-   number of tests, any lock. If one of these is missing, stop and say which.
+1. Read the repository's `AGENTS.md`: gate command, execution machine, any
+   lock. If one of these is missing, stop and say which.
 2. Check that the commit to qualify is **pushed** and note its full SHA.
 3. If the profile reserves tests for a remote machine, run **nothing** on the
    local workstation, not even "to have a quick look". A guard that refuses the
@@ -33,6 +33,8 @@ the final result.
 - Exact command and qualified SHA.
 - Machine: `hostname`, `uname -s`.
 - Path of the log.
-- Exit code, number of tests passed / expected, failures named.
-- Verdict: **GREEN** only if the code is 0 **and** the number of tests matches
-  the expected one; otherwise **RED** or **INCOMPLETE**, with the reason.
+- Exit code, number of tests read in the log (and that of the last green gate
+  if an earlier log exists), failures named.
+- Verdict: **GREEN** only if the code is 0 **and** the log shows the complete
+  suite; otherwise **RED** or **INCOMPLETE**, with the reason. A clear drop in
+  the number of tests is flagged.

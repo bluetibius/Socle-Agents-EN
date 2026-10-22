@@ -22,7 +22,7 @@ Short and actionable, in this order (template:
 1. What the product is, in a few lines.
 2. The pointer to the common rules (organisation profile, then this baseline) —
    a pointer, **not a copy**.
-3. **Done**: the gate, its machine, the expected number of tests.
+3. **Done**: the gate and its machine.
 4. Commands.
 5. Structure: where things are, which documents are authoritative.
 6. The product's environments.
@@ -33,6 +33,8 @@ Short and actionable, in this order (template:
 ## What does not belong in it
 
 - History: it goes in `docs/` or in Git.
+- A figure that changes with every version (number of tests, current version,
+  size): it goes stale with nothing to flag it; it is read at its source.
 - An instruction for a one-off piece of work: it stays with that work, and only
   enters `AGENTS.md` if it becomes a permanent rule of the product.
 - A copy of the common rules: cite, do not copy.

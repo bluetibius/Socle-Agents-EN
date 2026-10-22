@@ -17,7 +17,8 @@ You own the **qualification** (template `template-qualification-plan.md` of the
 3. Write hermetic tests (no network, no neighbouring repository, anonymised
    fixtures). You do not change application code; a test that reveals a defect
    is reported.
-4. After deployment to test: real journey with the session's tools, widths
+4. After deployment to test: real journey, first through HTTP requests and
+   the repository's qualification tool (`verification-and-done`), widths
    375 / 768 / 1024 / 1440, empty, error, unavailable and access-denied states;
    served version and commit.
 

@@ -36,6 +36,8 @@ the failures — never by deleting incidents.
 
 ## Deploying
 
+- On a shared environment, first measure what is served and apply the
+  integration rule of `parallel-git-work`.
 - A deployment delivers **code**. An import, a seed or a data migration is
   started by its own action.
 - Read the `--dry-run` of a publication that deletes (`--delete`); files the
@@ -55,6 +57,9 @@ the failures — never by deleting incidents.
 - Health (`/health`) tells the truth: 200 only if configuration, database,
   schema and critical dependencies are available.
 - A version endpoint exposes version, commit and canonical environment.
+- Every command that waits on the network or a service has a **time limit**,
+  using the tool present on the machine where it runs (the profile says which:
+  not every system has `timeout`).
 
 ## Slowness and incidents
 

@@ -3,6 +3,37 @@
 Version X.Y.Z of this repository translates version X.Y.Z of the French
 original, Socle Agents.
 
+## 0.4.0 — 22/10/2026
+
+Developed as 0.4.0-dev.20261022130747.
+
+Rules drawn from feedback on a release run by two agent tools on the same
+product. No skill or agent name changes.
+
+### New
+
+- `parallel-git-work`: section "Several agents on the same product" — reserve
+  a version number before the first commit that carries it, integrate by
+  merging and never by re-applying someone else's work, deploy a shared
+  environment from a single integration branch after measuring what is served
+  (the deployed commit contains the served commit).
+- `verification-and-done`, "Interface": qualify without a browser first (HTTP
+  requests, a versioned repository tool limited to test); a driven browser only
+  if it holds up in the session; visual checks asked of the human and named in
+  the report.
+- `safe-operations`: measure what is served before a shared deployment; a time
+  limit on every command that waits on the network, with the machine's tool.
+- Profile template: time limits per machine, qualification tool, reserving
+  numbers, test integration branch, what an agent publishes on its own.
+
+### Changes
+
+- The number of tests is no longer written in the instructions (`AGENTS.md`,
+  profile, template): it is read in the gate's log. `gate-runner` returns GREEN
+  on exit code 0 and a complete suite, and flags a clear drop.
+- `release` and `tester` measure what is served before deploying and qualify
+  through HTTP requests first.
+
 ## 0.3.3 — 22/10/2026
 
 Developed as 0.3.3-dev.20261022104048.
