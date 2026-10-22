@@ -33,8 +33,10 @@ committed; pushed if a remote exists.
 ## Repository-specific rules
 
 - **A translation, not a fork.** The French repository "Socle Agents" is the
-  reference. A change is made there first, then translated here; nothing is
-  added here that does not exist there.
+  reference. A change to the plugin is made there first, then translated here;
+  nothing is added to the plugin here that does not exist there. The
+  repository's own tooling (`bin/verify.sh`, this file, the README's
+  maintenance section) may differ.
 - **Aligned versions.** Version X.Y.Z here translates exactly the French
   X.Y.Z; a release requires the French tag vX.Y.Z (checked by `bin/verify.sh`).
 - **Translated names are stable.** The name mapping (French → English) is in

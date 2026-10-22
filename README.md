@@ -103,11 +103,18 @@ sh bin/verify.sh
 ```
 
 Static check: skill and agent front matter, links, manifests, single version
-(`VERSION`), read-only agents, alignment with the French original when it is
-present next to this repository (`../Socle Agents`, or `$SOCLE_FR_PATH`), and
-**genericity** — no personal path, no private IP, no real domain. Terms specific
-to an installation are listed outside the repository, in
-`$SOCLE_FORBIDDEN_TERMS` or `~/.config/socle-agents/termes-interdits.txt`.
+(`VERSION`), read-only agents, and **genericity** — no personal path, no private
+IP, no real domain. Terms specific to an installation are listed outside the
+repository, in `$SOCLE_FORBIDDEN_TERMS` or
+`~/.config/socle-agents/termes-interdits.txt`.
+
+## Maintaining the translation
+
+Only for whoever keeps this repository aligned with the French original; using
+or adapting the baseline does not need it. With the French repository next to
+this one (`../Socle Agents`, or `$SOCLE_FR_PATH`), `bin/verify.sh` also checks
+that both have the same skills, templates and agents, and that a released
+version X.Y.Z has a French tag vX.Y.Z. Without it, that check is skipped.
 
 ## Author and licence
 

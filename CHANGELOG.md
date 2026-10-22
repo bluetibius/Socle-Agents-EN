@@ -3,6 +3,19 @@
 Version X.Y.Z of this repository translates version X.Y.Z of the French
 original, Socle Agents.
 
+## 0.3.3 — 22/10/2026
+
+Developed as 0.3.3-dev.20261022104048.
+
+Patch: no skill or agent changes.
+
+- The alignment with the French original is presented as a maintainer check:
+  neutral message when the original is absent, and its own README section,
+  "Maintaining the translation", outside "Check". Using or adapting the
+  baseline never needs the French repository.
+- `AGENTS.md`: "a translation, not a fork" applies to the plugin; the
+  repository's own tooling may differ.
+
 ## 0.3.2 — 22/10/2026
 
 Developed as 0.3.2-dev.20261022101128.

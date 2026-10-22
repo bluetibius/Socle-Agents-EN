@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Generic agent baseline, in English, independent of any installation.",
-    "version": "0.3.2"
+    "version": "0.3.3"
   },
   "plugins": [
     {
       "name": "socle-en",
       "source": "./plugins/socle-en",
       "description": "Generic principles, skills and specialised agents, in English.",
-      "version": "0.3.2"
+      "version": "0.3.3"
     }
   ]
 }

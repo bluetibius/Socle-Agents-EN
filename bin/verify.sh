@@ -43,9 +43,11 @@ for f in plugins/*/agents/*.md; do
 done
 ok "read-only agents"
 
-# 2c. Alignment with the French original (repository "Socle Agents", next to
-#     this one, or $SOCLE_FR_PATH): same number of skills, templates and
-#     agents. A released version X.Y.Z must translate the French tag vX.Y.Z.
+# 2c. Maintainer check: alignment with the French original (repository
+#     "Socle Agents", next to this one, or $SOCLE_FR_PATH): same number of
+#     skills, templates and agents. A released version X.Y.Z must translate the
+#     French tag vX.Y.Z. Skipped when the original is absent: using or adapting
+#     this baseline never needs it.
 version=$(cat VERSION)
 base=${version%%-*}
 fr=${SOCLE_FR_PATH:-../Socle Agents}
@@ -58,7 +60,7 @@ counts() { # counts <list of paths>: "skills/templates/agents"
 }
 en_counts="$(ls -d plugins/socle-en/skills/*/ | wc -l | tr -d ' ')/$(find plugins/socle-en/skills -name '*.md' ! -name SKILL.md | wc -l | tr -d ' ')/$(ls plugins/socle-en/agents/*.md | wc -l | tr -d ' ')"
 if [ ! -d "$fr/.git" ] && [ ! -f "$fr/.git" ]; then
-  echo "--   French original not found ($fr): alignment not checked"
+  echo "--   translation alignment: maintainer check, skipped (no French original at $fr)"
 elif [ "$base" = "$version" ]; then
   if git -C "$fr" rev-parse --verify --quiet "v$version^{commit}" >/dev/null; then
     fr_counts=$(counts "$(git -C "$fr" ls-tree -r --name-only "v$version" plugins/socle)")
