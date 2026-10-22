@@ -1,0 +1,19 @@
+{
+  "name": "socle-agents-en",
+  "owner": {
+    "name": "Jonathan Estevez",
+    "email": "24703117+bluetibius@users.noreply.github.com"
+  },
+  "metadata": {
+    "description": "Generic agent baseline, in English, independent of any installation.",
+    "version": "0.3.2"
+  },
+  "plugins": [
+    {
+      "name": "socle-en",
+      "source": "./plugins/socle-en",
+      "description": "Generic principles, skills and specialised agents, in English.",
+      "version": "0.3.2"
+    }
+  ]
+}
