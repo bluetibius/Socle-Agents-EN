@@ -26,6 +26,7 @@ session carries it out.
 | new capability, unclear need, several audiences affected | `business-analyst` (then the owner's decision) |
 | public contract, API, shared format, several repositories, a choice hard to undo | `architect` |
 | a screen created or visibly changed | `ux-designer`, then `design-system-compliance` |
+| a crowded screen, or lightening requested | `declutter-review` |
 | schema, migration, import, index, real data | `data-manager` |
 | authentication, permissions, external inputs, outgoing requests, secrets, collection | `security-review` |
 | deployment, gate, scheduled task, monitoring, backup, server configuration | `devops` |
@@ -58,7 +59,7 @@ Routing **never** removes:
 | cross-cutting feature | `business-analyst` → decision → `architect` → `ux-designer` / `data-manager` → `technical-analyst` + `tester` plan → build → checks → `release` | — |
 | dependency or tool updated | `devops` → gate → corrective release | architect unless a contract breaks |
 | production incident | `incident-diagnostician` (read-only) → routing of the fix | any write until the cause is established |
-| audit requested | the relevant audit agent (`autonomy-auditor`, `security-review`, `design-system-compliance`) | building (an audit does not fix) |
+| audit requested | the relevant audit agent (`autonomy-auditor`, `security-review`, `design-system-compliance`, `declutter-review`) | building (an audit does not fix) |
 
 ## Escalation
 

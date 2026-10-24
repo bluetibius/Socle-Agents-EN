@@ -3,6 +3,21 @@
 Version X.Y.Z of this repository translates version X.Y.Z of the French
 original, Socle Agents.
 
+## 0.5.0 — 24/10/2026
+
+Developed as 0.5.0-dev.20261024111150. No existing skill or agent name changes.
+
+### New
+
+- `declutter-review` agent (French: `revue-epure`): states a screen's purpose
+  in one sentence, puts each visible element through the test of that purpose
+  and returns what can be removed, simplified, collapsed, moved or merged
+  without losing a capability, with a before / after measure. Read-only;
+  complements `design-system-compliance` (which checks the rules) by
+  questioning even what complies.
+- `routing`: signal "a crowded screen, or lightening requested" →
+  `declutter-review`.
+
 ## 0.4.0 — 22/10/2026
 
 Developed as 0.4.0-dev.20261022130747.
@@ -109,3 +124,4 @@ Agents:
 | `conformite-design-system` | `design-system-compliance` |
 | `revue-securite` | `security-review` |
 | `contenu-promotionnel` | `promotional-content` |
+| `revue-epure` (0.5.0) | `declutter-review` |

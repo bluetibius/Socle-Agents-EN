@@ -67,6 +67,7 @@ shell" rule of `working-principles`.
 | Verification | `gate-runner` | gate and evidence | no |
 | Verification | `security-review` | targeted review of a change | no |
 | Verification | `design-system-compliance` | interface against the design system and `ux-doctrine` | no |
+| Verification | `declutter-review` | what a screen can remove without losing a capability | no |
 | Verification | `autonomy-auditor` | autonomy verdicts and debts | no |
 | Verification | `refutation-reviewer` | tries to refute a declared result | no |
 | Delivery | `release` | decided release, up to test | yes |
