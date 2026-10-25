@@ -21,7 +21,7 @@ analysis.
 | Plan | `technical-analyst` | technical plan | [template-technical-plan.md](template-technical-plan.md) |
 | Plan | `tester` | qualification plan | [template-qualification-plan.md](template-qualification-plan.md) |
 | Build | `developer`, `devops`, `data-manager`, `tester` | commits, green gate | — |
-| Verification | `gate-runner`, `security-review`, `design-system-compliance`, `declutter-review`, `autonomy-auditor`, `refutation-reviewer` | check reports | — |
+| Verification | `gate-runner`, `security-review`, `design-system-compliance`, `declutter-review`, `finish-inspector`, `autonomy-auditor`, `refutation-reviewer` | check reports | — |
 | Delivery | `release`, `production-preparer` | tag, qualified test, step-by-step procedure | — |
 | Operations | `incident-diagnostician` | incident report | [template-incident-report.md](template-incident-report.md) |
 | Closing | `memory-keeper` | memory and roadmap reconciled | — |

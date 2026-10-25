@@ -21,7 +21,7 @@ principle.
 | Design | `architect`, `ux-designer`, `data-manager` |
 | Plan | `technical-analyst`, `tester` (qualification plan) |
 | Build | `developer` (one instance per lane), `devops`, `data-manager`, `tester` |
-| Verification | `gate-runner`, `security-review`, `design-system-compliance`, `declutter-review`, `autonomy-auditor`, `refutation-reviewer` |
+| Verification | `gate-runner`, `security-review`, `design-system-compliance`, `declutter-review`, `finish-inspector`, `autonomy-auditor`, `refutation-reviewer` |
 | Delivery | `release`, `production-preparer` |
 | Operations, closing | `incident-diagnostician`, `memory-keeper` |
 

@@ -1,6 +1,6 @@
 ---
 name: ux-doctrine
-description: Generic UX/UI doctrine — principles and their order, four spaces (use, settings, administration, operations), minimal text, progressive complexity, one function one path, navigation, account area, footer, icons, responsive, states, forms, action feedback, anti-patterns. Load to design, change or review an interface, and used by the design-system-compliance and declutter-review agents. The project's design system takes precedence over these rules.
+description: Generic UX/UI doctrine — principles and their order, four spaces (use, settings, administration, operations), minimal text, progressive complexity, one function one path, navigation, account area, footer, icons, responsive, states, forms, action feedback, anti-patterns. Load to design, change or review an interface, and used by the design-system-compliance, declutter-review and finish-inspector agents. The project's design system takes precedence over these rules.
 ---
 
 # UX doctrine
@@ -56,6 +56,10 @@ navigation and adds nothing to the use navigation.
 - Never on a use screen: the name of an internal component as a cause, a
   command, an environment variable, a documentation path, a raw enumeration
   value, implementation jargon ("ingestion").
+- **One language on screen**: the interface's. A proper noun that has a form
+  in that language is shown in that form alone; its other forms serve search,
+  not display. Typography follows that language (spacing, quotes, apostrophes,
+  capitals).
 - ✓ Removing a use screen's paragraphs removes no capability.
 
 ## 4. Progressive complexity
@@ -114,7 +118,7 @@ No write while typing; a committing validation stays explicit.
   screenshot attached on sensitive screens. The address comes from
   configuration, never from the template.
 
-## 8. Icons
+## 8. Icons and logos
 
 - An icon alone only for a meaning that is universal in context (close, search,
   back, more actions, zoom, copy); it carries an accessible name and a tooltip.
@@ -122,6 +126,9 @@ No write while typing; a committing validation stays explicit.
 - Two entries do not share an icon; an icon never carries a state on its own.
 - One set, one stroke; an icon next to a label is decorative (`aria-hidden`).
   The touch target is held by the button.
+- **Logos**: a logo that already carries the name is not doubled by the name
+  in text; the name remains its accessible name. A series of logos shares
+  height, margin and background treatment, and stays readable in each theme.
 
 ## 9. Responsive and accessibility
 

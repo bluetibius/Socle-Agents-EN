@@ -3,6 +3,26 @@
 Version X.Y.Z of this repository translates version X.Y.Z of the French
 original, Socle Agents.
 
+## 0.6.0 — 25/10/2026
+
+Developed as 0.6.0-dev.20261024191937. No existing skill or agent name changes.
+
+### New
+
+- `finish-inspector` agent (French: `inspecteur-finitions`): looks at an
+  interface as the person who receives it and reports what looks sloppy —
+  information said twice, mixed languages, typography, mismatched series of
+  logos or images, alignment, cut-off or hidden text, raw or placeholder
+  content, a forgotten theme — with a severity (blocking, visible, finish) and
+  a proposed fix. Read-only; complements `design-system-compliance` (the
+  rules) and `declutter-review` (what is useful).
+- `ux-doctrine`: one language on screen, the interface's, including for proper
+  nouns that have a form in that language; a logo that already carries the
+  name is not doubled by the name in text; a series of logos shares height,
+  margin and background, readable in each theme.
+- `routing`: signal "visible work ready to be declared done, a screen that
+  looks sloppy" → `finish-inspector`.
+
 ## 0.5.0 — 24/10/2026
 
 Developed as 0.5.0-dev.20261024111150. No existing skill or agent name changes.
@@ -125,3 +145,4 @@ Agents:
 | `revue-securite` | `security-review` |
 | `contenu-promotionnel` | `promotional-content` |
 | `revue-epure` (0.5.0) | `declutter-review` |
+| `inspecteur-finitions` (0.6.0) | `finish-inspector` |
