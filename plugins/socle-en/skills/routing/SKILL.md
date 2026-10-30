@@ -29,7 +29,8 @@ session carries it out.
 | a crowded screen, or lightening requested | `declutter-review` |
 | visible work ready to be declared done, a screen that looks sloppy | `finish-inspector` |
 | schema, migration, import, index, real data | `data-manager` |
-| authentication, permissions, external inputs, outgoing requests, secrets, collection | `security-review` |
+| authentication, permissions, external inputs, outgoing requests, secrets, collection, added dependency | `security-review` |
+| first production release, change of architecture or exposure, audit due date from the profile | `security-auditor` |
 | deployment, gate, scheduled task, monitoring, backup, server configuration | `devops` |
 | more than a few files, or a non-obvious implementation order | `technical-analyst` |
 | observable behaviour changed | `tester` (at minimum: a regression test) |
@@ -60,7 +61,7 @@ Routing **never** removes:
 | cross-cutting feature | `business-analyst` → decision → `architect` → `ux-designer` / `data-manager` → `technical-analyst` + `tester` plan → build → checks → `release` | — |
 | dependency or tool updated | `devops` → gate → corrective release | architect unless a contract breaks |
 | production incident | `incident-diagnostician` (read-only) → routing of the fix | any write until the cause is established |
-| audit requested | the relevant audit agent (`autonomy-auditor`, `security-review`, `design-system-compliance`, `declutter-review`, `finish-inspector`) | building (an audit does not fix) |
+| audit requested | the relevant audit agent (`autonomy-auditor`, `security-auditor`, `security-review`, `design-system-compliance`, `declutter-review`, `finish-inspector`) | building (an audit does not fix) |
 
 ## Escalation
 

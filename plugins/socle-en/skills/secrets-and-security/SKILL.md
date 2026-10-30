@@ -1,6 +1,6 @@
 ---
 name: secrets-and-security
-description: Everyday secrets and security — what never leaves, entry points and their guards, SSRF, local interfaces, redacted logs, privacy (mobile included), loosening a control, backups. Load before writing a report, a commit or a log that could contain a secret or personal data, and before touching authentication, permissions, outgoing requests or data collection.
+description: Everyday secrets and security — what never leaves, entry points and their guards, SSRF, local interfaces, redacted logs, privacy (mobile included), dependencies, served configuration, loosening a control, audits, backups. Load before writing a report, a commit or a log that could contain a secret or personal data, before touching authentication, permissions, outgoing requests, data collection or dependencies, and for a security audit.
 ---
 
 # Secrets and security
@@ -86,6 +86,38 @@ route carries one:
 - A development build that talks to production says so and uploads nothing
   from testing by accident.
 
+## Dependencies
+
+- Every dependency is declared with a versioned lock file; the gate's and the
+  deployment's installation start from that lock.
+- An added dependency is justified: a real need, a maintained project, a
+  compatible licence, an official source. What a few lines do does not justify
+  a dependency.
+- Known vulnerabilities: the package manager's audit tool, or the one the
+  profile names, on the lock. A vulnerability is ignored through a dated,
+  reasoned and reviewed exception, never by raising a threshold.
+- A vendored copy keeps its version and source; it is updated like a
+  dependency.
+
+## Served configuration
+
+What the server returns is part of security, and is measured:
+
+- HTTPS only, redirect from HTTP, `Strict-Transport-Security`;
+- headers: a strict `Content-Security-Policy`, `X-Content-Type-Options:
+  nosniff`, protection against framing (`frame-ancestors`),
+  `Referrer-Policy`;
+- session cookies `Secure`, `HttpOnly`, `SameSite`;
+- error pages without a trace, framework version, path or query;
+- nothing served outside the public folder: environment files, Git
+  repository, backups, debugging or database administration tools;
+- only the necessary ports exposed.
+
+It is measured through read requests (`GET`, `HEAD`), on the test
+environment. Production is measured the same way only if the owner asks, under
+`guarded-production`. Never active probing (scanning, fuzzing, brute force,
+load): it degrades a shared environment and is not an agent's job.
+
 ## Loosening a control
 
 Any loosening of a security control is a **regression**: it requires a test
@@ -94,8 +126,14 @@ security library is reported to every product that took it on.
 
 ## Audits
 
-Current findings live in the security audit the profile designates. Work that
-is not about security does not restart an audit: it passes on what it sees.
+Current findings live in the security audit the profile designates, each with
+a stable identifier, a severity and a closing criterion. Work that is not about
+security does not restart an audit: it passes on what it sees.
+
+A full audit starts from a short **threat model** — assets to protect, who
+might want them, where one gets in, what protects each entry — and is redone
+before a first production release, after a change of architecture or
+exposure, and at the frequency the profile sets.
 
 ## Backups
 

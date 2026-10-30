@@ -66,6 +66,7 @@ shell" rule of `working-principles`.
 | Build | `devops` | delivery and operations tooling | tooling |
 | Verification | `gate-runner` | gate and evidence | no |
 | Verification | `security-review` | targeted review of a change | no |
+| Verification | `security-auditor` | full security audit of a product | no |
 | Verification | `design-system-compliance` | interface against the design system and `ux-doctrine` | no |
 | Verification | `declutter-review` | what a screen can remove without losing a capability | no |
 | Verification | `finish-inspector` | what looks sloppy in a delivered interface | no |

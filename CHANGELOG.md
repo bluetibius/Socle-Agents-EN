@@ -3,6 +3,32 @@
 Version X.Y.Z of this repository translates version X.Y.Z of the French
 original, Socle Agents.
 
+## 0.7.0 — 30/10/2026
+
+Developed as 0.7.0-dev.20261029182619. No existing skill or agent name changes.
+
+### New
+
+- `security-auditor` agent (French: `auditeur-securite`): full security audit
+  of a product, read-only — threat model, `security-review`'s checkpoints over
+  the whole code, dependencies and known vulnerabilities, served configuration
+  measured in test through `GET` and `HEAD` requests, operations (rotation,
+  logs, backups). Findings with a stable identifier, severity and closing
+  criterion. Never active probing; production only at the owner's request,
+  under `guarded-production`.
+- `secrets-and-security`: "Dependencies" (lock, justification, vulnerability
+  audit, dated exceptions) and "Served configuration" (HTTPS, headers, cookies,
+  error pages, exposed files, ports, read-only measurement) sections; "Audits"
+  adds the threat model and when to redo a full audit.
+- `routing`: signal "first production release, change of architecture or
+  exposure, audit due date from the profile" → `security-auditor`.
+
+### Changes
+
+- `security-review`: an eleventh point, a dependency added or upgraded in the
+  diff. Its scope is the change; a whole product belongs to
+  `security-auditor`.
+
 ## 0.6.0 — 25/10/2026
 
 Developed as 0.6.0-dev.20261024191937. No existing skill or agent name changes.
@@ -146,3 +172,4 @@ Agents:
 | `contenu-promotionnel` | `promotional-content` |
 | `revue-epure` (0.5.0) | `declutter-review` |
 | `inspecteur-finitions` (0.6.0) | `finish-inspector` |
+| `auditeur-securite` (0.7.0) | `security-auditor` |
