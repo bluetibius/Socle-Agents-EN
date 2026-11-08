@@ -27,7 +27,7 @@ declared as a deviation, with its withdrawal condition.
 | Skill | For |
 |---|---|
 | `working-principles` | authority, order of trust, profile, deviations, read-only shell |
-| `parallel-git-work` | several agents on the same repositories |
+| `parallel-git-work` | several agents on the same repositories; checkout freshness |
 | `verification-and-done` | "done", gates, evidence, closing report |
 | `versioning-and-release` | SemVer, development number, release |
 | `guarded-production` | what an agent prepares and where it stops |

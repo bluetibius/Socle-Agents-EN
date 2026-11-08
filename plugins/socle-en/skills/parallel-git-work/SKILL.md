@@ -1,6 +1,6 @@
 ---
 name: parallel-git-work
-description: Git rules when several sessions or agents work on the same repositories at the same time — measure the state, one worktree per piece of work, reserve a version number, integrate by merging, deploy to a shared environment, what is never touched, branch housekeeping. Load before any write in a Git repository, before a commit, a push, a stash, a reset, or deleting a branch or a worktree, and before opening a version number or deploying to test.
+description: Git rules when several sessions or agents work on the same repositories at the same time — measure the state, one worktree per piece of work, reserve a version number, integrate by merging, deploy to a shared environment, what is never touched, branch housekeeping. Load before any write in a Git repository, before an audit, review or diagnosis that cites code (checkout freshness), before a commit, a push, a stash, a reset, or deleting a branch or a worktree, and before opening a version number or deploying to test.
 ---
 
 # Git and parallel work
@@ -18,6 +18,26 @@ git remote
   reset.
 - A main working copy may be on another piece of work's branch: check before
   writing there.
+
+## Checkout freshness
+
+A local copy is not the published branch: it may be far behind it. Before any
+work, **including an audit, review or diagnosis that cites code**:
+
+1. `git fetch --tags` on the canonical remote (the one the profile names).
+2. Measure how far `HEAD` is behind and ahead of the tracked branch and of the
+   published branch: `git rev-list --left-right --count HEAD...<remote>/<branch>`
+   (ahead on the left, behind on the right).
+3. Main copy behind and clean: advance by fast-forward only
+   (`git merge --ff-only`), never by merging, resetting or stashing someone
+   else's work. Copy dirty, or on another piece of work's branch: do not
+   overwrite it; open a worktree from the up-to-date published branch. Copy ahead
+   or diverged: force nothing, report it, and read or work in a worktree from
+   the published branch.
+4. An audit, review or report names the exact commit or tag it read. Without
+   access to the remote, it says "freshness not verified".
+5. A finding drawn from a copy whose lag was not measured is "not re-checked":
+   it is checked against the published branch before any fix.
 
 ## One piece of work, one worktree
 

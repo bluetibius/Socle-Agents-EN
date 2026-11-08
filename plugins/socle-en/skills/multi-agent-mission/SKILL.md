@@ -46,7 +46,8 @@ Do not confuse declared, adopted, enabled, executed.
 - A lane **owns** named repositories. Two lanes never write to the same
   repository at the same time. A finding outside the scope is relayed to the
   orchestrator.
-- Each lane works in its own worktree (`parallel-git-work`).
+- Each lane works in its own worktree (`parallel-git-work`), opened from the
+  up-to-date published branch ("Checkout freshness").
 - A cross-cutting responsibility (deployment, lock, backlog) has **one** named
   owner, or the rule says "each lane, under the lock".
 

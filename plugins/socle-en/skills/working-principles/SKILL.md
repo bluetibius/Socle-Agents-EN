@@ -67,7 +67,9 @@ observed".
 ## Measure before writing
 
 Read the state (Git, files, environment) before changing anything. Re-read
-just before writing a shared file: another agent may have changed it.
+just before writing a shared file: another agent may have changed it. A local
+copy may be behind the published branch: measure its freshness before relying
+on it (`parallel-git-work`, "Checkout freshness").
 
 ## Deviations
 

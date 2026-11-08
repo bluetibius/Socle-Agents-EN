@@ -3,6 +3,29 @@
 Version X.Y.Z of this repository translates version X.Y.Z of the French
 original, Socle Agents.
 
+## 0.8.0 — 08/11/2026
+
+Developed as 0.8.0-dev.20261108120410. No existing skill or agent name changes.
+
+### New
+
+- `parallel-git-work`: "Checkout freshness" section. Before any work,
+  including an audit, review or diagnosis that cites code: `git fetch --tags`,
+  measure how far behind and ahead of the tracked and published branches,
+  fast-forward only for a clean main copy, a worktree from the up-to-date
+  published branch for a dirty copy or one on another piece of work, the
+  commit or tag read named in every report ("freshness not verified" without
+  access to the remote), a finding from an unmeasured copy "not re-checked".
+
+### Changes
+
+- `working-principles` ("Measure before writing") and `multi-agent-mission`
+  (lanes) point to that section; the `security-auditor`, `security-review`,
+  `refutation-reviewer` and `incident-diagnostician` agents load it and name the
+  commit read.
+
+Minor rank: a behaviour rule is added, nothing is removed or renamed.
+
 ## 0.7.0 — 30/10/2026
 
 Developed as 0.7.0-dev.20261029182619. No existing skill or agent name changes.

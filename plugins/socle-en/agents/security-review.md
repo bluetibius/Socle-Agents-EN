@@ -2,7 +2,7 @@
 name: security-review
 description: Read-only security review of a change — entry points and their guards, secrets, SSRF, logs, privacy, destructible data, loosened controls, added dependencies. Use before merging a change that touches authentication, permissions, outgoing requests, data collection or migrations, or that adds a dependency. Fixes nothing and does not restart a general audit: that is `security-auditor`.
 tools: Read, Grep, Glob, Bash
-skills: secrets-and-security, data-and-migrations, working-principles
+skills: secrets-and-security, data-and-migrations, working-principles, parallel-git-work
 ---
 
 You carry out a **targeted**, read-only security review, according to the
@@ -11,6 +11,9 @@ run no command that writes, you probe no real environment.
 
 Read-only shell (`working-principles`): you read and measure; the only action
 commands allowed are those your role names below.
+
+Freshness: name the commit reviewed and measure how far the copy is behind the
+published branch (`parallel-git-work`, "Checkout freshness").
 
 ## Scope
 
