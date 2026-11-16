@@ -42,9 +42,15 @@ work, **including an audit, review or diagnosis that cites code**:
 ## One piece of work, one worktree
 
 ```
-git worktree add ../<repository>-<topic> -b work/<topic> main
+git worktree add <location> -b work/<topic> main
 ```
 
+- Location: the one the profile designates (for example a folder dedicated to
+  worktrees, sorted by repository); without one, `../<repository>-<topic>`,
+  next to the main copy. A worktree placed elsewhere must still find the
+  neighbouring repositories its relative paths assume; the profile says how.
+- An existing worktree is moved only with `git worktree move`, never by simply
+  moving its folder, and only by its own piece of work.
 - Installed dependencies (`vendor/`, `node_modules/`…): **copy** them into the
   worktree (`cp -cR` on APFS), never a symbolic link — autoloading would follow
   the link to the other copy.

@@ -3,6 +3,21 @@
 Version X.Y.Z of this repository translates version X.Y.Z of the French
 original, Socle Agents.
 
+## 0.8.1 — 16/11/2026
+
+No existing skill or agent name changes.
+
+### Changes
+
+- `parallel-git-work` ("One piece of work, one worktree"): a worktree goes
+  where the profile designates; `../<repository>-<topic>` stays the default. A
+  worktree placed elsewhere must still resolve the neighbouring repositories
+  its relative paths assume. An existing worktree is moved only with
+  `git worktree move`, by its own piece of work.
+
+Patch rank: the default behaviour does not change; the profile may designate
+another location.
+
 ## 0.8.0 — 08/11/2026
 
 Developed as 0.8.0-dev.20261108120410. No existing skill or agent name changes.
