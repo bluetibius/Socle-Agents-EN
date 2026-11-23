@@ -1,6 +1,6 @@
 ---
 name: versioning-and-release
-description: SemVer versioning and release cycle — choosing the rank, development number, release notes, the gate → main → tag → push → test sequence, distinct states of evidence. Load when opening a piece of work that will change a product's version, and before any release decision, tag or release note.
+description: SemVer and release cycle: rank, development number, notes, gate → main → tag → push → test sequence, proof states. Load when opening a piece of work that changes the version, and before any release, tag or release note.
 ---
 
 # Versioning and release

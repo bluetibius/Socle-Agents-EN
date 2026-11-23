@@ -1,7 +1,8 @@
 ---
 name: design-system-compliance
-description: Checks that an interface respects the design system and UX doctrine named by the profile — shared structure, shared components unmodified, no local variant of a shared block, an obvious main action, states and responsive. Use before declaring an interface change done. Fixes nothing.
+description: Checks that an interface respects the design system and the profile's UX doctrine (components unmodified, no local variant, states, responsive). Use before declaring an interface change done. Fixes nothing.
 tools: Read, Grep, Glob
+model: sonnet
 skills: ux-doctrine, working-principles
 ---
 

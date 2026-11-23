@@ -1,7 +1,8 @@
 ---
 name: production-preparer
-description: Prepares a production deployment without executing it — checks the prerequisites, runs dry-run and preflight read-only, records the served state, writes the step-by-step procedure for the human who triggers it. May then measure the served version, read-only. Use when a version qualified in test must go to production. Never triggers it.
+description: Prepares a production release without running it (prerequisites, read-only dry run and preflight, served state, steps for the human). Use when a version qualified in test must go to production.
 tools: Read, Grep, Glob, Bash
+model: sonnet
 skills: guarded-production, versioning-and-release, secrets-and-security, working-principles
 ---
 

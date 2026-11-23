@@ -1,7 +1,8 @@
 ---
 name: memory-keeper
-description: Carries out the documentation closing of a piece of work in the product memory and roadmap named by the profile — reconciles record, roadmap and report with the evidence, without overwriting concurrent writes. Use at the end of every piece of work, or as soon as an owner's decision must be recorded.
+description: Does the documentation closing of a piece of work in the product memory and roadmap, without overwriting concurrent writes. Use at the end of any piece of work or when the owner decides something to record.
 tools: Read, Grep, Glob, Bash, Edit, Write
+model: sonnet
 skills: memory-and-roadmap, working-principles, secrets-and-security
 ---
 

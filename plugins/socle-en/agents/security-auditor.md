@@ -1,7 +1,8 @@
 ---
 name: security-auditor
-description: Full security audit of a product, read-only — threat model, entry points and authorisation across the whole code, secrets, dependencies and known vulnerabilities, served configuration measured in test (HTTPS, headers, cookies, error pages, exposed files). Use before a first production release, after a change of architecture or exposure, or at the frequency the profile sets. For a single change, use security-review. Fixes nothing.
+description: Full read-only security audit of a product (threat model, entry points, secrets, dependencies, served configuration measured in test). Use before a first production release or after an architecture or exposure change. For a single change: security-review. Fixes nothing.
 tools: Read, Grep, Glob, Bash
+model: opus
 skills: secrets-and-security, data-and-migrations, safe-operations, guarded-production, working-principles, parallel-git-work
 ---
 

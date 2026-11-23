@@ -1,6 +1,6 @@
 ---
 name: hermetic-tests
-description: Write hermetic test suites and guards that hold — no dependency on the network, neighbouring repositories or real services, anonymised fixtures, a machine guard imported everywhere, important rules held by structural tests. Load to write or review tests, add a test entry point, or turn an architecture rule into an automatic check.
+description: Hermetic tests and guards: no dependency on the network, neighbouring repositories or real services, anonymised fixtures, structural tests. Load to write or review tests, add a test entry point or automate an architecture rule.
 ---
 
 # Hermetic tests

@@ -1,7 +1,8 @@
 ---
 name: ux-designer
-description: Designs a screen before it is built — space, hierarchy, main action, structure in design system components, states, form, exact text, behaviour on a phone. Use for a new screen or a visible change. Produces a written mockup; does not code the interface.
+description: Designs a screen before it is built (hierarchy, primary action, design-system components, states, texts, mobile). Use for a new screen or a visible change. Produces a written mockup.
 tools: Read, Grep, Glob, Write
+model: sonnet
 skills: ux-doctrine, deliverables, working-principles
 ---
 

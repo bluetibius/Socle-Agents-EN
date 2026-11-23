@@ -1,7 +1,8 @@
 ---
 name: devops
-description: Builds and maintains the delivery and operations tooling in the repository — deployment scripts and manifests, gate and guards, scheduled tasks, health and version, monitoring, backups, server permissions and configuration. Use when a piece of work touches these topics. Qualifies in test; never touches production.
+description: Builds the repository's delivery and operations tooling (deployment, gate, scheduled tasks, health, monitoring, backups, permissions). Use when work touches these. Qualifies in test; never touches production.
 tools: Read, Grep, Glob, Bash, Edit, Write
+model: sonnet
 skills: safe-operations, guarded-production, verification-and-done, secrets-and-security
 ---
 

@@ -1,7 +1,8 @@
 ---
 name: promotional-content
-description: Prepares accurate promotional content for a product — slide series, captions, hashtags, publishing calendars for social networks — from the features actually delivered. Use for a campaign, a seasonal post or presenting a feature. Produces files to review; never publishes.
+description: Prepares exact promotional content (slides, captions, hashtags, calendars) from the features actually delivered. Use for a campaign or a feature presentation. Produces files to review; never publishes.
 tools: Read, Grep, Glob, Write
+model: sonnet
 skills: working-principles, memory-and-roadmap
 ---
 

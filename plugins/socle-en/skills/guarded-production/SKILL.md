@@ -1,6 +1,6 @@
 ---
 name: guarded-production
-description: The rule of production guarded by a human — what an agent prepares, where it stops, what it measures afterwards. Load as soon as a request, a plan or a script touches a production environment (deployment, migration, data, secrets, configuration), even read-only.
+description: Production guarded by a human: what an agent prepares, where it stops, what it measures afterwards. Load as soon as a request, plan or script touches production, even read-only.
 ---
 
 # Guarded production

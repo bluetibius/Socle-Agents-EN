@@ -1,7 +1,8 @@
 ---
 name: autonomy-auditor
-description: Audit of the functional and operational autonomy of a product or a feature — spots hard-coded business data, manual recurring tasks, corrections that require a commit or SQL, non-idempotent imports. Use to qualify a feature before declaring it done, or to audit an existing product. Read-only.
+description: Audits the autonomy of a product or feature (hard-coded business data, manual tasks, fixes needing a commit or SQL, non-idempotent imports). Use before declaring done or to audit an existing product.
 tools: Read, Grep, Glob
+model: sonnet
 skills: product-autonomy, working-principles
 ---
 

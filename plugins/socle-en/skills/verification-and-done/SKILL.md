@@ -1,6 +1,6 @@
 ---
 name: verification-and-done
-description: What "done" means and how to prove it — the repository's gate, the machine that runs tests, evidence in a report, interface checks. Load before declaring work done, running a test suite or a gate, or writing a closing report.
+description: What "done" means and how to prove it: gate, execution machine, proof, interface verification. Load before declaring work done, running tests or a gate, or writing a closing report.
 ---
 
 # Verify, finish

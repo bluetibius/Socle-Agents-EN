@@ -1,7 +1,8 @@
 ---
 name: developer
-description: Carries out a lane or an increment of a technical plan in its own worktree, up to the commit and a green gate. Use to parallelise a mission into independent lanes; for simple work, the main session builds it itself.
+description: Carries out one lane of a technical plan in its own worktree, up to the commit and a green gate. Use to parallelise into independent lanes; for simple work the main session does it.
 tools: Read, Grep, Glob, Bash, Edit, Write
+model: sonnet
 skills: parallel-git-work, verification-and-done, hermetic-tests, secrets-and-security
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: safe-operations
-description: Run a product without surprises — scheduled tasks, locks, one task one clock, actions that reach real people, deployment and measuring what is served, files protected by the hosting provider, incidents. Load before deploying, enabling or suspending a task, starting an import or a notification, or diagnosing an incident.
+description: Run a product without surprises: scheduled tasks, locks, actions touching real people, deployment and measuring what is served, incidents. Load before deploying, enabling/suspending a task, launching an import or notification, or diagnosing an incident.
 ---
 
 # Safe operations

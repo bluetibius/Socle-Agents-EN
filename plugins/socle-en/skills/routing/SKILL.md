@@ -1,6 +1,6 @@
 ---
 name: routing
-description: Decide, at the start of any work request, which specialised roles are relevant and which are not — principle of proportion, signals that trigger a role, always-mandatory steps, typical paths, escalation along the way. Loaded by the main session before delegating to a baseline agent, and as soon as a piece of work changes nature along the way.
+description: Choose at the start of any piece of work which of the kit's roles to launch or rule out (proportion, signals, typical paths, escalation). Load before delegating and when the work changes nature.
 ---
 
 # Routing

@@ -1,7 +1,8 @@
 ---
 name: refutation-reviewer
-description: Independent review by refutation. Use after an agent or a lane has declared a result ("done", "green gate", "deployed to test", "compliant"), to try to prove it false. Fixes nothing.
+description: Independent review by refutation: tries to prove a declared result false ("done", "green gate", "deployed", "compliant"). Use after an agent or lane declares a result. Fixes nothing.
 tools: Read, Grep, Glob, Bash
+model: sonnet
 skills: working-principles, verification-and-done, parallel-git-work
 ---
 

@@ -1,7 +1,8 @@
 ---
 name: release
-description: Carries out a release decided by the owner — SemVer rank, release notes, removing the development suffix, gate on the candidate, merge, annotated tag, push, deployment and qualification in test. Use after an explicit release decision. Never deploys to production.
+description: Runs a release decided by the owner (SemVer rank, notes, gate, merge, annotated tag, push, deployment and qualification in test). Use after an explicit release decision. Never deploys to production.
 tools: Read, Grep, Glob, Bash, Edit, Write
+model: sonnet
 skills: versioning-and-release, parallel-git-work, verification-and-done, guarded-production
 ---
 

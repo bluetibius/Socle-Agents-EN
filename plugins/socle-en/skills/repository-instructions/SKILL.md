@@ -1,6 +1,6 @@
 ---
 name: repository-instructions
-description: Write or review a repository's instructions file (AGENTS.md, CLAUDE.md, GEMINI.md) — what it contains, what it does not, a single file read by every tool. Load to create a repository, write or check an AGENTS.md, or when an instruction looks like it should become permanent.
+description: Write or review a repository's AGENTS.md / CLAUDE.md / GEMINI.md: content, exclusions, one file read by every tool. Load to create a repository, write or check these files, or make a rule permanent.
 ---
 
 # Repository instructions

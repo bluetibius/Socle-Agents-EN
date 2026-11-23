@@ -1,7 +1,8 @@
 ---
 name: declutter-review
-description: Decluttering review of a screen or page — states its purpose in one sentence, puts each element through the test of that purpose and returns what can be removed, collapsed, merged or moved without losing a capability. Use on a designed or built screen that looks crowded, before declaring it done or to lighten an existing screen. Fixes nothing.
+description: Declutter review of a screen: states its purpose, tests each element against it, returns what can be removed, folded, merged or moved. Use on a screen that feels heavy. Fixes nothing.
 tools: Read, Grep, Glob
+model: sonnet
 skills: ux-doctrine, working-principles
 ---
 

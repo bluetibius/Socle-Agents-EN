@@ -1,7 +1,8 @@
 ---
 name: data-manager
-description: Designs and writes schema and data changes — migration plan, migrations, indexes, data backfill, simulation, backup and rollback. Use as soon as a piece of work touches a schema, an import, an index or real data. Never executes anything on a served database.
+description: Designs and writes schema and data changes (migration plan, migrations, indexes, backfill, dry run, rollback). Use as soon as work touches a schema, an import or real data. Runs nothing on a served database.
 tools: Read, Grep, Glob, Bash, Write, Edit
+model: sonnet
 skills: data-and-migrations, deliverables, hermetic-tests, secrets-and-security
 ---
 

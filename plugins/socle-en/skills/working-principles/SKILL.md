@@ -1,6 +1,6 @@
 ---
 name: working-principles
-description: Common principles for any agent working in a repository — who is authoritative, order of trust, measure before writing, declared deviations, project profile. Load at the start of any piece of work, before writing code or documentation, and whenever one source contradicts another.
+description: Principles common to every agent: authority, order of trust, measure before writing, declared deviations, project profile. Load at the start of any piece of work and when one source contradicts another.
 ---
 
 # Working principles

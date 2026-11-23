@@ -1,6 +1,6 @@
 ---
 name: parallel-git-work
-description: Git rules when several sessions or agents work on the same repositories at the same time — measure the state, one worktree per piece of work, reserve a version number, integrate by merging, deploy to a shared environment, what is never touched, branch housekeeping. Load before any write in a Git repository, before an audit, review or diagnosis that cites code (checkout freshness), before a commit, a push, a stash, a reset, or deleting a branch or a worktree, and before opening a version number or deploying to test.
+description: Git rules for parallel work: measure the state, one worktree per piece of work, reserve a version number, integrate by merge, checkout freshness. Load before any Git write (commit, push, stash, reset, deleting a branch/worktree), before an audit or review citing code, and before opening a version or deploying to test.
 ---
 
 # Git and parallel work

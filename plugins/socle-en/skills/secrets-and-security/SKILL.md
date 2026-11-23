@@ -1,6 +1,6 @@
 ---
 name: secrets-and-security
-description: Everyday secrets and security — what never leaves, entry points and their guards, SSRF, local interfaces, redacted logs, privacy (mobile included), dependencies, served configuration, loosening a control, audits, backups. Load before writing a report, a commit or a log that could contain a secret or personal data, before touching authentication, permissions, outgoing requests, data collection or dependencies, and for a security audit.
+description: Secrets and security: what never leaves, entry points, SSRF, redacted logs, privacy, dependencies, audits. Load before a report, commit or log that may contain a secret or personal data, before touching auth, permissions, outgoing requests, collection or dependencies, and for an audit.
 ---
 
 # Secrets and security

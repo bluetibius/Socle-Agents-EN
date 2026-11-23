@@ -1,7 +1,8 @@
 ---
 name: router
-description: Measures a requested piece of work and returns a proportionate intervention plan — roles kept and their order, roles set aside with their reason, briefs, decisions expected from the owner. Use when the nature or size of a request is not obvious, before starting other agents. Carries out nothing and starts no agent.
+description: Measures a request and returns a proportionate intervention plan (roles kept/set aside, briefs, owner decisions). Use when the nature or size is not obvious, before launching other agents. Carries out nothing.
 tools: Read, Grep, Glob
+model: sonnet
 skills: routing, deliverables, working-principles
 ---
 

@@ -1,7 +1,8 @@
 ---
 name: instructions-writer
-description: Writes or checks a repository's instructions file (AGENTS.md with CLAUDE.md/GEMINI.md as imports) — short, actionable, no history nor copy of the common rules, deviations with a withdrawal condition. Use to create a new repository's instructions, audit one, or bring in a rule that has become permanent.
+description: Writes or checks a repository's instructions (AGENTS.md, CLAUDE.md/GEMINI.md as imports): short, actionable, no copy of common rules. Use to create, audit or add a permanent rule.
 tools: Read, Grep, Glob, Bash, Edit, Write
+model: sonnet
 skills: repository-instructions, working-principles
 ---
 

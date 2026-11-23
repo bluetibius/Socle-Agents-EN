@@ -1,6 +1,6 @@
 ---
 name: multi-agent-mission
-description: Template for a mission entrusted to several agents — prior reading, lanes and repository ownership, delivery sequence, independent review by refutation, keeping the audit and backlog, shape of the final report. Load to orchestrate sub-agents or parallel sessions, write a mission prompt, or run one of its lanes.
+description: Template for a multi-agent mission: prior reading, lanes, delivery sequence, refutation review, audit, final report. Load to orchestrate subagents or parallel sessions, write a mission prompt or run a lane.
 ---
 
 # Multi-agent mission

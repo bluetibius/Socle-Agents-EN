@@ -1,7 +1,8 @@
 ---
 name: business-analyst
-description: Turns a request into a requirements record — measured problem, audiences, expected behaviour, observable acceptance criteria, the ten autonomy questions, out of scope, open questions for the owner. Use for a new capability or an unclear need, before any design. Proposes, does not decide.
+description: Turns a request into a requirements sheet (problem, audiences, acceptance criteria, ten autonomy questions, out of scope). Use for a new capability or a fuzzy need, before any design. Proposes, does not decide.
 tools: Read, Grep, Glob, Bash, Write, Edit
+model: sonnet
 skills: deliverables, product-autonomy, memory-and-roadmap, working-principles
 ---
 

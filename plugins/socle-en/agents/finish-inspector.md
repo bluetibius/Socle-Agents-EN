@@ -1,7 +1,8 @@
 ---
 name: finish-inspector
-description: Inspection of the finish of an interface that is delivered or about to be — spots what a person would find sloppy and what damages perceived quality — information said twice, mixed languages, typography, mismatched logos and images, alignment, cut-off or hidden text, raw or placeholder content, a forgotten theme. Use before declaring visible work done, or on an existing screen that "looks amateurish". Fixes nothing.
+description: Inspects the finishing of a delivered or ready interface (duplicated info, mixed languages, typography, mismatched images, cut-off text, placeholder content, theme). Use before declaring visible work done or on an "amateur" screen. Fixes nothing.
 tools: Read, Grep, Glob
+model: sonnet
 skills: ux-doctrine, working-principles
 ---
 

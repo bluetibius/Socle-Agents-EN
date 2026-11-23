@@ -1,6 +1,6 @@
 ---
 name: ux-doctrine
-description: Generic UX/UI doctrine — principles and their order, four spaces (use, settings, administration, operations), minimal text, progressive complexity, one function one path, navigation, account area, footer, icons, responsive, states, forms, action feedback, anti-patterns. Load to design, change or review an interface, and used by the design-system-compliance, declutter-review and finish-inspector agents. The project's design system takes precedence over these rules.
+description: Generic UX/UI doctrine: principles, four spaces, minimal text, navigation, states, forms, anti-patterns. Load to design, change or review an interface; the project's design system prevails.
 ---
 
 # UX doctrine

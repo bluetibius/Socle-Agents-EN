@@ -1,6 +1,6 @@
 ---
 name: deliverables
-description: The deliverables passed from one role to another in a piece of work — requirements record, architecture decision record (ADR), screen mockup, migration plan, technical plan, qualification plan, incident report — their templates, where to store them and how to cite them. Load to produce or consume a deliverable between agents, or to brief a specialised agent.
+description: Deliverables passed between roles (requirements sheet, ADR, mockup, migration plan, technical plan, qualification plan, incident report): templates, filing, citing. Load to produce, consume or brief a deliverable.
 ---
 
 # Work deliverables

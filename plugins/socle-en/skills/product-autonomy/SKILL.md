@@ -1,6 +1,6 @@
 ---
 name: product-autonomy
-description: Doctrine of functional and operational autonomy — code builds the product, the product runs its own operation. The six autonomies, the ten questions and the verdict grid. Load to design or qualify a feature, audit a product, or when a business datum, a date, a list or a recurring task seems to require a code change or regular human intervention.
+description: Autonomy doctrine: the code builds the product, the product runs itself (six autonomies, ten questions, verdicts). Load to design, qualify or audit a feature, or when a business datum, date or recurring task requires code or regular human intervention.
 ---
 
 # Product autonomy

@@ -1,6 +1,6 @@
 ---
 name: memory-and-roadmap
-description: Keep a product memory and a roadmap shared between agents — read before the work, record decisions during it, reconcile at closing, levels of evidence, concurrent writes under a lock. Load at the start and end of any piece of work when the profile names a memory or a roadmap, and as soon as the owner decides something new.
+description: Shared product memory and roadmap: read before, record during, reconcile at closing, proof levels, concurrent writes. Load at the start and end of any piece of work, and when the owner decides something new.
 ---
 
 # Memory and roadmap

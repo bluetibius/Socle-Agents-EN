@@ -1,7 +1,8 @@
 ---
 name: incident-diagnostician
-description: Diagnoses an incident read-only — measured symptoms, timeline, established or probable cause, impact, proposed fix not applied, prevention. Use when something does not work as expected in test or in production. Writes nothing to environments.
+description: Diagnoses an incident read-only (symptoms, timeline, cause, impact, proposed unapplied fix, prevention). Use when something misbehaves in test or production. Writes nothing to environments.
 tools: Read, Grep, Glob, Bash, Write
+model: sonnet
 skills: safe-operations, data-and-migrations, secrets-and-security, deliverables, working-principles, parallel-git-work
 ---
 

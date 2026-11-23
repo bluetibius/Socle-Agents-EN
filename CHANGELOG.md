@@ -3,6 +3,23 @@
 Version X.Y.Z of this repository translates version X.Y.Z of the French
 original, Socle Agents.
 
+## 0.9.0 — 23/11/2026
+
+No existing skill or agent name changes.
+
+### Changes
+
+- The 23 agents set their `model`: `haiku` for `gate-runner`, `opus` for
+  `architect` and `security-auditor`, `sonnet` for the other twenty. They no
+  longer inherit the session's model. An installation wanting another model
+  overrides the agent in its own `.claude/agents/`.
+- The `description` of the 16 skills and 23 agents is shortened (roughly 4,100
+  down to 2,300 tokens loaded on every request); it still says when to use the
+  skill or agent. Skill and agent bodies do not change.
+
+Minor rank: the agents' default behaviour changes (model set), without removing
+or renaming anything.
+
 ## 0.8.1 — 16/11/2026
 
 No existing skill or agent name changes.

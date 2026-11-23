@@ -1,6 +1,6 @@
 ---
 name: data-and-migrations
-description: Protect real data — isolated test databases, destructive commands, migrations, simulation before writing, backup and restore, encryption keys, truthfulness of displayed data (absence ≠ zero). Load before writing a migration, running a command that writes, purges, imports or restores, touching an encryption key, or displaying data that may be missing.
+description: Protect real data: isolated test databases, destructive commands, migrations, dry runs, backup, encryption keys, absence ≠ zero. Load before a migration, a command that writes/purges/imports/restores, or displaying data that may be missing.
 ---
 
 # Data and migrations

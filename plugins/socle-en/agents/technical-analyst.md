@@ -1,7 +1,8 @@
 ---
 name: technical-analyst
-description: Produces the technical plan for a change in a repository — steps ordered by file, associated tests, the repository's pitfalls, copies and duplicated code to respect, version rank, split into lanes. Use when a change touches more than a few files or the order is not obvious. Read-only on the code.
+description: Produces the technical plan of a change (steps per file, tests, pitfalls, version rank, lanes). Use when more than a few files are touched or the order is unclear. Read-only on the code.
 tools: Read, Grep, Glob, Write
+model: sonnet
 skills: deliverables, parallel-git-work, hermetic-tests, versioning-and-release
 ---
 

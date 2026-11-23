@@ -1,7 +1,8 @@
 ---
 name: tester
-description: Designs a change's test strategy, writes the tests (regression, hermetic, structural) and qualifies the behaviour in the test environment — real journey, responsive, error states, served version. Use as soon as an observable behaviour changes. Writes tests, not application code.
+description: Designs a change's test strategy, writes the tests (regression, hermetic, structural) and qualifies behaviour in test (journeys, responsive, errors, served version). Use as soon as observable behaviour changes.
 tools: Read, Grep, Glob, Bash, Edit, Write
+model: sonnet
 skills: hermetic-tests, verification-and-done, deliverables, ux-doctrine
 ---
 

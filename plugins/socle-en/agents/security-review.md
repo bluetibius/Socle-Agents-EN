@@ -1,7 +1,8 @@
 ---
 name: security-review
-description: Read-only security review of a change — entry points and their guards, secrets, SSRF, logs, privacy, destructible data, loosened controls, added dependencies. Use before merging a change that touches authentication, permissions, outgoing requests, data collection or migrations, or that adds a dependency. Fixes nothing and does not restart a general audit: that is `security-auditor`.
+description: Read-only security review of a change (entry points, secrets, SSRF, logs, privacy, migrations, added dependencies). Use before merging a change touching auth, permissions, outgoing requests, collection or dependencies. General audit: security-auditor. Fixes nothing.
 tools: Read, Grep, Glob, Bash
+model: sonnet
 skills: secrets-and-security, data-and-migrations, working-principles, parallel-git-work
 ---
 

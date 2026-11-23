@@ -1,7 +1,8 @@
 ---
 name: gate-runner
-description: Runs a repository's gate on the machine its profile names and reports usable evidence (commit, machine, log, number of tests). Use to qualify a pushed commit before a merge, tag or release. Does not fix failures.
+description: Runs a repository's gate on the profile's machine and reports proof (commit, machine, log, test count). Use to qualify a pushed commit before merge, tag or release. Does not fix failures.
 tools: Read, Grep, Glob, Bash
+model: haiku
 skills: verification-and-done, parallel-git-work, working-principles
 ---
 
