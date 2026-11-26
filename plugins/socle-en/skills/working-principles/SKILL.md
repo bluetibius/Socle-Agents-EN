@@ -112,4 +112,5 @@ the owner.
 `guarded-production`, `secrets-and-security`, `product-autonomy`,
 `repository-instructions`, `multi-agent-mission`, `memory-and-roadmap`,
 `data-and-migrations`, `safe-operations`, `hermetic-tests`,
-`ux-doctrine`, `routing`, `deliverables`.
+`ux-doctrine`, `routing`, `deliverables`, `critical-analysis`,
+`post-work-verification`.

@@ -42,6 +42,21 @@ declared as a deviation, with its withdrawal condition.
 | `ux-doctrine` | principles, spaces, navigation, states, forms, anti-patterns |
 | `routing` | which roles to start or set aside for a piece of work; proportion, escalation |
 | `deliverables` | requirements, ADR, mockup, plans, qualification, incident: templates and handover |
+| `critical-analysis` | multi-axis critical PDF report, without modifying the audited project |
+| `post-work-verification` | before/after PDF report, proven finding resolution and regressions |
+
+### Reports on request
+
+In a project, ask for example:
+
+```
+/socle-en:critical-analysis Analyse this project: security, logic, quality, usage and UX/UI. Deliver the PDF outside the project, without writing anything in it.
+/socle-en:post-work-verification Verify the work against the supplied initial report. Deliver the before/after PDF outside the project, without writing anything in it.
+```
+
+The first report assigns identifiers and closure criteria; the second reuses
+them with current evidence. Installation-specific destinations belong in the
+request or profile. A report request does not start fixes or authorise deployment.
 
 ### Agents (`plugins/socle-en/agents/`)
 

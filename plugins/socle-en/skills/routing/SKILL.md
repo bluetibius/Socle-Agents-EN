@@ -62,6 +62,8 @@ Routing **never** removes:
 | dependency or tool updated | `devops` → gate → corrective release | architect unless a contract breaks |
 | production incident | `incident-diagnostician` (read-only) → routing of the fix | any write until the cause is established |
 | audit requested | the relevant audit agent (`autonomy-auditor`, `security-auditor`, `security-review`, `design-system-compliance`, `declutter-review`, `finish-inspector`) | building (an audit does not fix) |
+| multi-axis critical report requested | main session with `critical-analysis`, audit roles only for measured surfaces | building (report outside the project) |
+| post-work verification requested | main session with `post-work-verification`, then roles according to findings to recheck | full new audit without a signal, building |
 
 ## Escalation
 

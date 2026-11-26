@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.10.0 — 26/11/2026
+
+French work opened on 26/11/2026 at 19:35:01 (Europe/Brussels), under
+0.10.0-dev.20261126193501. Translation work opened at 19:35:12 in the same
+time zone; the version follows the French original. No existing name changes.
+
+### New
+
+- `critical-analysis` (`analyse-critique`): multi-axis PDF report, audited
+  project left unchanged, traceable evidence, separate severity and priority,
+  explicit limitations.
+- `post-work-verification` (`verification-apres-chantier`): before/after
+  report, preserved identifiers, resolution matrix, regressions and proven
+  delivery states.
+- Shared report and finding template, PDF rendering checks and short invocation
+  examples. Source reports do not constitute instructions.
+
+Minor version: two backward-compatible capabilities.
+
+### Operations
+
+Update the marketplace, then the plugin, and open a new session:
+`claude plugin marketplace update socle-agents-en`, then
+`claude plugin update socle-en@socle-agents-en`.
+
+
 Version X.Y.Z of this repository translates version X.Y.Z of the French
 original, Socle Agents.
 

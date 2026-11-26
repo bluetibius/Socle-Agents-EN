@@ -31,6 +31,11 @@ principle.
 
 ## Where to store them
 
+Critical reports requested outside the project use `critical-analysis` and
+`post-work-verification`: their external destination takes precedence over the
+work deliverable locations below; they create no document in the audited
+repository.
+
 Wherever the repository declares (`AGENTS.md`). Otherwise:
 
 - `docs/requirements/YYYY-MM-DD-<topic>.md`
